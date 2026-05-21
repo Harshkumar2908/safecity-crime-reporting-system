@@ -1,7 +1,5 @@
-FROM tomcat:10.1
+FROM tomcat:10.1-jdk17
 
-# Remove default apps
-RUN rm -rf /usr/local/tomcat/webapps/*
+COPY SafeCity.war /usr/local/tomcat/webapps/
 
-# Copy your WAR file
-COPY SafeCity.war /usr/local/tomcat/webapps/ROOT.war
+EXPOSE 8080
