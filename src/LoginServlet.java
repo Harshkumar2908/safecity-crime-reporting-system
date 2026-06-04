@@ -29,11 +29,11 @@ public class LoginServlet extends HttpServlet {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/safecity",
-                    "root",
-                    "root123"
-            );
+            String url = "jdbc:mysql://kodama.proxy.rlwy.net:43135/railway";
+            String user = "root";
+            String dbPassword = "AUqdUeOSCsvVFyiofMpiKoZvzlhjlLZG";
+
+            Connection con = DriverManager.getConnection(url, user, dbPassword);
 
             PreparedStatement ps = con.prepareStatement(
                     "SELECT * FROM admin WHERE username=? AND password=?"
