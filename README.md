@@ -7,7 +7,7 @@ Built using Java (JSP/Servlet), MySQL, and deployed on Apache Tomcat.
 
 ## 🌐 Live Demo
 
-👉 https://safecity-crime-reporting-system.onrender.com/SafeCity/
+https://safecity-crime-reporting-system.onrender.com/
 
 ---
 
