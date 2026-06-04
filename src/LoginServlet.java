@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            String url = "jdbc:mysql://kodama.proxy.rlwy.net:43135/railway";
+            String url = "jdbc:mysql://kodama.proxy.rlwy.net:43135/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
             String user = "root";
             String dbPassword = "AUqdUeOSCsvVFyiofMpiKoZvzlhjlLZG";
 
